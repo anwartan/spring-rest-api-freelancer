@@ -1,0 +1,56 @@
+@startuml hello world
+
+       entity Categories{
+           *id:INT
+           --
+           *name:VARCHAR
+
+
+       }
+       entity gigs{
+            *id:INT
+            --
+            *name:VARCHAR
+
+        }
+
+        entity list{
+            *id:INT
+            --
+            *name:VARCHAR
+            *description:VARCHAR
+        }
+
+         entity user{
+             *id:INT
+             --
+             *name:VARCHAR
+             *email:email
+             *password:password
+             token:VARCHAR
+             country:VARCHAR
+             since:Year
+             facebook:VARCHAR
+             google:VARCHAR
+             github:VARCHAR
+         }
+
+         entity tag{
+               *id:INT
+               --
+               *name:VARCHAR
+
+           }
+       entity skill{
+           *id:INT
+           --
+           *name :VARCHAR
+       }
+         user||--|{list
+         user||--||skill
+         list}|--|{gigs
+         gigs||--||Categories
+         gigs||--|{tag
+         Categories||--|{skill
+
+       @enduml

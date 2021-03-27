@@ -1,0 +1,125 @@
+POST http://localhost:8080/api/category
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+{
+  "name": "Computer"
+}
+
+###
+
+GET http://localhost:8080/api/category/all
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+###
+
+PUT http://localhost:8080/api/category/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+{
+  "name": "Teknik Informatika123"
+}
+###
+DELETE http://localhost:8080/api/category/3
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+
+
+### List
+POST http://localhost:8080/api/list
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+{
+  "name": "list computer",
+  "description": ""
+}
+
+###
+GET http://localhost:8080/api/list/all
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+###
+
+### gig
+POST http://localhost:8080/api/gig
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+{
+  "name": "Membuat list computer1",
+  "category_id": 1
+}
+###
+GET http://localhost:8080/api/gig/all
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+###
+POST http://localhost:8080/api/listgig
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+{
+  "gig_id": "1",
+  "list_id": "2"
+}
+
+###
+GET http://localhost:8080/api/listgig/all
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+###
+GET http://localhost:8080/api/skill/all
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+###
+POST http://localhost:8080/api/skill
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4ODY1NjEsImlhdCI6MTYxNjg1MDU2MX0.v1tdMyWdzEBJfB3Mo4ZHhTetAbWMHAkZALrdiNWyB88
+
+{
+  "name": "Design",
+  "category_id":1
+}
+###
+POST http://localhost:8080/api/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "anwar5123@2gmai.com",
+  "password":"21312321",
+  "name": "saya"
+}
+
+
+###
+POST http://localhost:8080/api/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "anwar523@2gmai.com",
+  "password":"21312321"
+}
+
+
+###
+GET http://localhost:8080/api/me
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbndhcjUyM0AyZ21haS5jb20iLCJleHAiOjE2MTY4MDY1NjgsImlhdCI6MTYxNjc3MDU2OH0.bHpHL29RYrL4fJNUOxqhRMy8kdltxYy4ZOe_OsJ_MtU
+
+###

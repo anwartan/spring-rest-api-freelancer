@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  freelancer-restfull-postgress:
+    container_name: "freelancer-restfull-postgress"
+    image: postgres:latest
+    ports:
+        - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: freelancer
+      POSTGRES_USER: freelancer
+      POSTGRES_DB: freelancer
